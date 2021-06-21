@@ -10,3 +10,17 @@ const nombrePremier = (n) => {
     }
 }
 nombrePremier(10);
+
+/* Deuxieme Test Palindrome */
+
+const palindrome = (str) => {
+    const strMin = str.toLowerCase();
+    if(strMin.split('').reverse().join('') === strMin){
+        console.log(`${strMin} est un Palindrome`);
+        return true ;
+    }else{
+        console.log(`${strMin} n'est pas un Palindrome`);
+        return false ;
+    }
+}
+console.log(palindrome("kayaK"));
